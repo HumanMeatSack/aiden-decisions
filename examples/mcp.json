@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aiden_decisions": {
+      "command": "/absolute/path/to/.venv/bin/aiden-decisions-mcp",
+      "env": {"AIDEN_DECISIONS_URL": "http://127.0.0.1:8841"}
+    }
+  }
+}

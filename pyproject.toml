@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiden-decisions"
+version = "0.1.0"
+description = "Local typed decisions, bounded workflows and measured uncertainty with Ollama"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "HumanMeatSack"}]
+dependencies = []
+keywords = ["ollama", "mcp", "classification", "decision-workflows", "tev1"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.30,<2"]
+
+[project.scripts]
+aiden-decisions = "aiden_decisions.decisions:main"
+aiden-decisions-mcp = "aiden_decisions.decision_mcp:main"
+aiden-decisions-hook = "aiden_decisions.decision_hooks:main"
+
+[project.urls]
+Repository = "https://github.com/HumanMeatSack/aiden-decisions"
+Issues = "https://github.com/HumanMeatSack/aiden-decisions/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aiden_decisions = ["decision_routes.json"]

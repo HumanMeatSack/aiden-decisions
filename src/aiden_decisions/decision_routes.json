@@ -1,0 +1,208 @@
+{
+  "devices": [
+    {
+      "id": "kitchen_21",
+      "actions": [
+        "status",
+        "power",
+        "brightness"
+      ]
+    },
+    {
+      "id": "kitchen_22",
+      "actions": [
+        "status",
+        "power",
+        "brightness"
+      ]
+    },
+    {
+      "id": "kitchen_23",
+      "actions": [
+        "status",
+        "power",
+        "brightness"
+      ]
+    },
+    {
+      "id": "kitchen_20",
+      "actions": [
+        "status",
+        "power",
+        "brightness"
+      ]
+    },
+    {
+      "id": "living_1",
+      "actions": [
+        "status",
+        "power",
+        "brightness"
+      ]
+    },
+    {
+      "id": "living_2",
+      "actions": [
+        "status",
+        "power",
+        "brightness"
+      ]
+    },
+    {
+      "id": "living_3",
+      "actions": [
+        "status",
+        "power",
+        "brightness"
+      ]
+    },
+    {
+      "id": "living_4",
+      "actions": [
+        "status",
+        "power",
+        "brightness"
+      ]
+    },
+    {
+      "id": "sony_tv",
+      "actions": [
+        "status",
+        "power"
+      ]
+    },
+    {
+      "id": "living_room_tv_media",
+      "actions": [
+        "status",
+        "power",
+        "media"
+      ]
+    },
+    {
+      "id": "bedroom_tv_media",
+      "actions": [
+        "status",
+        "power",
+        "media"
+      ]
+    },
+    {
+      "id": "room_ac",
+      "actions": [
+        "status",
+        "power",
+        "temperature"
+      ]
+    },
+    {
+      "id": "living_room_ac",
+      "actions": [
+        "status",
+        "power",
+        "temperature"
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "id": "kitchen_lights",
+      "name": "kitchen lights",
+      "aliases": [
+        "the lights",
+        "all the lights",
+        "all lights"
+      ],
+      "kind": "light",
+      "devices": [
+        "kitchen_21",
+        "kitchen_22",
+        "kitchen_20",
+        "kitchen_23"
+      ]
+    },
+    {
+      "id": "kitchen_light_23",
+      "name": "kitchen light 23",
+      "aliases": [],
+      "kind": "light",
+      "devices": [
+        "kitchen_23"
+      ]
+    },
+    {
+      "id": "sony_tv",
+      "name": "TV",
+      "aliases": [
+        "Sony TV",
+        "television"
+      ],
+      "kind": "tv",
+      "devices": [
+        "sony_tv"
+      ]
+    },
+    {
+      "id": "living_room_tv",
+      "name": "living room TV",
+      "aliases": [
+        "living room television",
+        "main tv"
+      ],
+      "kind": "tv",
+      "devices": [
+        "living_room_tv_media"
+      ]
+    },
+    {
+      "id": "bedroom_tv",
+      "name": "Bedroom TV",
+      "aliases": [
+        "Bedroom's TV"
+      ],
+      "kind": "tv",
+      "devices": [
+        "bedroom_tv_media"
+      ]
+    },
+    {
+      "id": "room_ac",
+      "name": "room AC",
+      "aliases": [
+        "bedroom AC",
+        "room air conditioner"
+      ],
+      "kind": "climate",
+      "devices": [
+        "room_ac"
+      ]
+    },
+    {
+      "id": "living_room_ac",
+      "name": "living room AC",
+      "aliases": [
+        "living room air conditioner"
+      ],
+      "kind": "climate",
+      "devices": [
+        "living_room_ac"
+      ]
+    },
+    {
+      "id": "living_room_lights",
+      "name": "living room lights",
+      "aliases": [
+        "living room lighting",
+        "living room bulbs",
+        "all living room lights"
+      ],
+      "kind": "light",
+      "devices": [
+        "living_4",
+        "living_3",
+        "living_2",
+        "living_1"
+      ]
+    }
+  ]
+}

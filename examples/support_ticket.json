@@ -1,0 +1,16 @@
+{
+  "state": "My card was charged twice. Please refund the extra payment.",
+  "questions": {
+    "queue": {
+      "type": "choice",
+      "instructions": "Choose the support queue.",
+      "criteria": {"billing": "Payments or refunds", "technical": "Software faults", "other": "Other issues"}
+    },
+    "refund": {"type": "noul", "instructions": "Is a refund explicitly requested?"},
+    "urgency": {
+      "type": "score",
+      "instructions": "Rate the urgency described in the state.",
+      "criteria": ["Routine", "Customer inconvenienced", "Critical outage"]
+    }
+  }
+}

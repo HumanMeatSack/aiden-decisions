@@ -1,0 +1,32 @@
+{
+  "state": "My card was charged twice. Please refund the extra payment.",
+  "stages": [
+    {
+      "id": "intent",
+      "questions": {"refund": {"type": "noul", "instructions": "Is a refund explicitly requested?"}}
+    },
+    {
+      "id": "queue",
+      "questions": {
+        "category": {"type": "choice", "instructions": "Choose the support queue.", "criteria": {"billing": "Payments or refunds", "other": "Other issues"}}
+      }
+    },
+    {
+      "id": "policy",
+      "after": ["intent", "queue"],
+      "rule": {
+        "op": "all",
+        "checks": [
+          {"stage": "intent", "question": "refund", "op": "gte", "value": 0.85},
+          {"stage": "queue", "question": "category", "op": "eq", "value": "billing"}
+        ]
+      }
+    },
+    {
+      "id": "followup",
+      "after": ["policy"],
+      "when": {"stage": "policy", "question": "result", "op": "gte", "value": 0.5},
+      "questions": {"duplicate": {"type": "noul", "instructions": "Does the supplied request report a duplicate charge?"}}
+    }
+  ]
+}

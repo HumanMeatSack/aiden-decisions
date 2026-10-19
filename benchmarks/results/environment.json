@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-19",
+  "python": "3.14.6",
+  "platform": "Darwin arm64",
+  "mcp_sdk": "1.30.0",
+  "unit_tests_passed": 65,
+  "evaluation_context": "Two synthetic evaluations ran concurrently on the same local Ollama model; latency is workload/hardware dependent. No cold-load or Jev comparison.",
+  "model": "tev1:4b-q4_K_M",
+  "model_digest": "608e3a13eec386ad34b657b1dcefe89e98c489f0cd6a3287ac2bb613db2f93da",
+  "questions_sha256": "e20c8e370310203422b6c5a814609f8b641181f6434ef2fb34950684cbb68871",
+  "corpus_sha256": "57f10f0990402073e01b014c9ed4a678cf8e9e76acf03f2396afe5b3ea51ea6c",
+  "global_calibration": false,
+  "action_authority": "none"
+}

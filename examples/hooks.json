@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{"hooks": [{
+      "type": "command",
+      "command": "/absolute/path/to/.venv/bin/aiden-decisions-hook",
+      "timeout": 4,
+      "additionalContextLimit": 250
+    }]}],
+    "PreToolUse": [{"matcher": "Bash|exec_command|apply_patch|Write|Edit|mcp__.*", "hooks": [{
+      "type": "command",
+      "command": "/absolute/path/to/.venv/bin/aiden-decisions-hook",
+      "timeout": 1,
+      "additionalContextLimit": 100
+    }]}]
+  }
+}
